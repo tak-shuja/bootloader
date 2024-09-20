@@ -34,7 +34,11 @@ start:
 	mov bx, 0x7e00
 	mov dh, 2
 	call disk_read
-	
+
+	; printing the read disk success message
+	mov bx, read_disk_success_msg
+	call print_string
+
 	mov ah, 0x0e
 	mov al, [0x7e00]
 	int 0x10

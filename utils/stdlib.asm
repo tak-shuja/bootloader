@@ -38,6 +38,7 @@ print_end:
 
 ; PRINT HEX START
 
+; TBH, I ACTUALLY AM NOT SURE ABOUT HOW THIS PROCEDURE WORKS
 print_hex:
 	pusha
 	mov cx, 0			; initialize the counter
@@ -78,6 +79,8 @@ end_hex_loop:
 
 hex_string: db "0x0000"
 
+
+; BYE BYE HEX
 ; PRINT HEX END
 
 
@@ -86,6 +89,7 @@ hex_string: db "0x0000"
 disk_read:
 	pusha
 	
+	; moving 0 into es
 	xor ax, ax
 	mov es, ax
 
