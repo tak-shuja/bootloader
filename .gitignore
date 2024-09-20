@@ -1,0 +1,9 @@
+# All the text files
+*.txt
+
+# Tests directory
+test/
+
+# Binaries and disk images
+*.bin
+*.img
